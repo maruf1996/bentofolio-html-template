@@ -1,0 +1,16 @@
+@use "../utils" as *;
+
+.blogs-area {
+  .intro-area {
+    .text {
+      .main-title {
+        font-size: 32px;
+      }
+      .sort-info {
+        margin-top: 18px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}

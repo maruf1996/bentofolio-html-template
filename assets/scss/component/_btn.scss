@@ -1,0 +1,116 @@
+@use "../utils" as *;
+
+.theme-btn {
+  background-color: var(--pn-bg-color-one);
+  color: var(--pn-white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 16px 24px;
+  border-radius: 8px;
+  transition: 0.3s;
+  @media #{$xl} {
+    font-size: 15px;
+    padding: 16px 13px;
+  }
+  @media #{$xs} {
+    width: 100%;
+    text-align: center;
+  }
+  svg {
+    margin-left: 8px;
+  }
+  &:hover {
+    background-color: var(--pn-primary);
+    color: var(--pn-white);
+  }
+  &-primary {
+    background-color: var(--pn-primary);
+    svg {
+      margin-right: 8px;
+      margin-left: 0;
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      background-color: var(--pn-primary-hover);
+    }
+  }
+  &-border {
+    color: var(--pn-text-color-one);
+    background-color: transparent;
+    border: 1px solid var(--pn-border-color);
+    svg {
+      margin-right: 8px;
+      margin-left: 0;
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      color: var(--pn-text-color-one);
+      background-color: var(--pn-bg-color-two);
+      border: 1px solid var(--pn-border-color);
+    }
+    &-2 {
+      color: var(--pn-text-color-one);
+      background-color: transparent;
+      border: 1px solid var(--pn-border-color);
+      font-size: 24px;
+      padding: 25px 24px;
+      &:hover {
+        color: var(--pn-white);
+        background-color: var(--pn-primary);
+      }
+    }
+  }
+}
+
+.link-btn {
+  color: var(--pn-primary);
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #2755fd38;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  i {
+    margin-left: 8px;
+  }
+  svg {
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+  &:hover {
+    border-bottom: 1px solid var(--pn-primary);
+    color: var(--pn-primary);
+  }
+}
+
+.visit-btn {
+  a {
+    color: var(--pn-text-color-two);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+    transition: 0.3s;
+    &:hover {
+      color: var(--pn-primary);
+    }
+    i {
+      margin-left: 4px;
+    }
+  }
+  &-primary {
+    a {
+      color: var(--pn-primary);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: var(--pn-primary-hover);
+      }
+    }
+  }
+}

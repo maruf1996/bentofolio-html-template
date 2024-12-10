@@ -1,0 +1,16 @@
+@use "../utils" as *;
+
+.content-box-card {
+  .services-product-area {
+    margin-top: 67px;
+  }
+  .block-image {
+    margin-top: 56px;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .working-with-area {
+    margin-top: 56px;
+  }
+}

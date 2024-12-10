@@ -1,0 +1,9 @@
+@use "./mixins" as *;
+
+%pn-include-bg {
+  @include background();
+}
+
+%pn-transition {
+  @include transition();
+}

@@ -1,0 +1,19 @@
+@use "../utils" as *;
+
+.service-item {
+  background-color: var(--pn-bg-color-two);
+  border-radius: 16px;
+  padding: 16px 16px 24px 16px;
+  height: 100%;
+  .service-icon {
+    background-color: var(--pn-bg-color-three);
+    border-radius: 8px;
+    padding: 25px 46px;
+  }
+  .service-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 16px;
+  }
+}

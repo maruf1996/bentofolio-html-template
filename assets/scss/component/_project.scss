@@ -1,0 +1,44 @@
+@use "../utils" as *;
+
+.project-item {
+  .img {
+    background-color: var(--pn-bg-color-two);
+    padding: 24px 24px 0 24px;
+    border-radius: 8px;
+    img {
+      border-radius: 8px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  .project-preview-btn {
+    width: 40px;
+    height: 40px;
+    color: var(--pn-primary);
+    background-color: var(--pn-bg-color-three);
+    box-shadow: 0px 12px 20px -6px rgba(26, 31, 44, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    i {
+      font-size: 20px;
+    }
+  }
+  .category {
+    color: var(--pn-primary);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    background-color: var(--pn-bg-color-three);
+    padding: 4px 8px;
+    border-radius: 4px;
+    bottom: 10px;
+    left: 13px;
+  }
+  &:hover {
+    .project-preview-btn {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@use "../utils" as *;
+
+.blog-details-area {
+  .blog-img {
+    margin-bottom: 24px;
+    border-radius: 8px;
+  }
+  .blog-details-content {
+    .common-title {
+      margin-top: 32px;
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 1.1;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+      color: var(--pn-text-color-two);
+      font-family: var(--pn-inter-fonts);
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    p + p {
+      margin-top: 25px;
+    }
+    blockquote {
+      background-color: var(--pn-bg-color-two);
+      border-radius: 8px;
+      padding: 40px 60px 40px 66px;
+      margin: 40px 0;
+      .blockquote-title {
+        color: var(--pn-text-color-one);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        &::after {
+          width: 2px;
+          height: 95px;
+          background-color: var(--pn-primary);
+          position: absolute;
+          top: 12px;
+          left: -24px;
+          content: "";
+        }
+      }
+      .name {
+        color: var(--pn-text-color-two);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+      }
+    }
+    .list-info {
+      margin-top: 16px;
+      margin-bottom: 40px;
+      li {
+        color: var(--pn-text-color-two);
+        font-family: var(--pn-inter-fonts);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2.2;
+        position: relative;
+        padding-left: 24px;
+        &::before {
+          background-color: var(--pn-bg-color-one);
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          content: "";
+          position: absolute;
+        }
+      }
+    }
+    .tags-and-share {
+      .label {
+        color: var(--pn-text-color-one);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-right: 24px;
+      }
+      .tags {
+        ul {
+          gap: 8px;
+          li {
+            a {
+              padding: 8px 12px;
+              border: 1px solid var(--pn-border-color);
+              border-radius: 8px;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 1.1;
+              color: var(--pn-text-color-six);
+              background-color: transparent;
+              transition: 0.3s;
+              &:hover {
+                background-color: var(--pn-primary);
+                color: var(--pn-white);
+              }
+            }
+          }
+        }
+      }
+      .share {
+      }
+    }
+    .related-blog-row {
+      --bs-gutter-y: 40px;
+      .blog-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

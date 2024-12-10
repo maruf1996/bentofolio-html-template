@@ -1,0 +1,29 @@
+@use "../utils" as *;
+
+.card {
+  background-color: var(--pn-bg-color-three);
+  box-shadow: var(--pn-shadow);
+  border: 0;
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  .card-body {
+    .card-headers {
+      margin-bottom: 15px;
+      @media #{$xs} {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start !important;
+      }
+      .card-title {
+        color: var(--pn-text-color-one);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.1;
+        @media #{$xl} {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

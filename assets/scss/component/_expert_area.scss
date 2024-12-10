@@ -1,0 +1,26 @@
+@use "../utils" as *;
+
+.my-expert-area {
+  .expert-area-row {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 16px;
+    .expert-area-item {
+      .icon {
+        background-color: var(--pn-bg-color-two);
+        border-radius: 8px;
+        height: 60px;
+        img {
+          width: 32px;
+        }
+      }
+      .text {
+        margin-top: 8px;
+        .title {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 108%;
+        }
+      }
+    }
+  }
+}

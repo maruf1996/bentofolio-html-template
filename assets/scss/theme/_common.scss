@@ -1,0 +1,94 @@
+@use "../utils" as *;
+
+.w-img {
+  width: 100%;
+}
+
+.m-img {
+  max-width: 100%;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.p-fix {
+  position: fixed;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-56 {
+  margin-top: 56px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+// form element css
+.form-main {
+  background-color: var(--pn-bg-color-four);
+  padding: 48px;
+  border-radius: 16px;
+}
+.input-group {
+  .form-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    color: var(--pn-text-color-one);
+    font-family: var(--pn-inter-fonts);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .form-control,
+  .form-select {
+    color: var(--pn-text-color-two);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    height: 56px;
+    padding: 0 24px;
+    border-radius: 8px !important;
+    border: 1px solid var(--pn-border-color);
+    transition: 0.3s;
+    &:focus {
+      border-color: var(--pn-border-color-focus);
+    }
+  }
+  .textarea-control {
+    padding: 24px;
+    height: 160px;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../utils" as *;
+
+.footer-section {
+  padding-top: 22px;
+  .footer-copyright {
+    a {
+      color: var(--pn-primary);
+      transition: 0.3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

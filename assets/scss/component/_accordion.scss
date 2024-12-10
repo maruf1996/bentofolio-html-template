@@ -1,0 +1,70 @@
+@use "../utils" as *;
+
+.faq-area {
+  margin-top: 56px;
+  .faq-body {
+    .accordion-item {
+      border: 1px solid var(--pn-border-color);
+      border-radius: 8px !important;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+    .accordion-button {
+      background-color: var(--pn-bg-color-four);
+      color: var(--text-color-one);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.1;
+      border: 1px solid transparent;
+      border-radius: 8px !important;
+      padding: 24px;
+      position: relative;
+      &::after {
+        background: none;
+      }
+      .arrow-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        background: var(--pn-white);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 16px;
+          height: 16px;
+          stroke: var(--pn-primary);
+        }
+        .minus {
+          display: none;
+        }
+      }
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: transparent;
+      box-shadow: none;
+      color: var(--pn-primary);
+      .arrow-icon {
+        background: var(--pn-bg-color-four);
+        .plus {
+          display: none;
+        }
+        .minus {
+          display: inline-block;
+        }
+      }
+    }
+    .accordion-body {
+      padding: 24px;
+      padding-top: 0;
+    }
+    .accordion-item + .accordion-item {
+      margin-top: 16px;
+    }
+  }
+}

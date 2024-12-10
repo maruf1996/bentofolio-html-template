@@ -1,0 +1,51 @@
+@use "../utils" as *;
+
+.sticky-card {
+  position: sticky;
+  top: 100px;
+}
+
+.about-me-image {
+  background-color: var(--pn-bg-color-two);
+  border-radius: 8px;
+  padding-top: 10px;
+  margin-bottom: 24px;
+}
+
+.about-me-content {
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+
+.about-me-social-icon {
+  margin-top: 34px;
+  @media #{$xl} {
+    margin-top: 20px;
+  }
+  ul {
+    gap: 8px;
+    li {
+      a {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid var(--pn-border-color);
+        font-size: 16px;
+        color: var(--pn-text-color-four);
+        &:hover {
+          background-color: var(--pn-white);
+          color: var(--pn-primary);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@use "../utils" as *;
+
+.lets-work-together {
+  .scrolling-info {
+    background-color: var(--pn-bg-color-two);
+    padding: 18px 0;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    .slider-item {
+      animation: scrolling 12s linear infinite;
+      p {
+        font-size: 18px;
+        color: var(--pn-text-color-two);
+        font-weight: 500;
+        line-height: 110%;
+      }
+    }
+  }
+  .lets-work-card-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 30px;
+    @media #{$sm} {
+      font-size: 30px;
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(35%);
+  }
+  to {
+    transform: translateX(calc(-100% - 16px));
+  }
+}

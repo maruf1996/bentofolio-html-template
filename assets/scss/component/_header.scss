@@ -1,0 +1,86 @@
+@use "../utils" as *;
+
+/* header css start */
+.header-section {
+  margin-bottom: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  .navbar {
+    padding: 0;
+    .container {
+      background: var(--pn-bg-color-three);
+      padding: 10px 10px 10px 24px;
+      border-radius: 16px;
+      box-shadow: var(--pn-shadow);
+    }
+    .navbar-brand {
+      gap: 12px;
+      .logo-name {
+        color: var(--pn-text-color-one);
+        font-size: 24px;
+        font-weight: 600;
+        span {
+          color: var(--pn-primary);
+        }
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: var(--pn-text-color-two);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.2;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 12px;
+          margin-left: 5px;
+          border-radius: 8px;
+          transition: 0.3s;
+          svg {
+            transition: 0.3s;
+            stroke: var(--pn-text-color-three);
+            stroke-width: 1.2;
+            width: 20px;
+            height: 20px;
+          }
+          &:hover {
+            color: var(--pn-text-color-one);
+            background-color: var(--pn-bg-color-two);
+            svg {
+              stroke: var(--pn-text-color-one);
+            }
+          }
+          &.active {
+            color: var(--pn-text-color-one);
+            background-color: var(--pn-bg-color-two);
+            svg {
+              stroke: var(--pn-text-color-one);
+            }
+          }
+        }
+      }
+    }
+    .header-action {
+      .theme-control-btn {
+        margin-right: 16px;
+        span {
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s;
+          &:hover {
+            background-color: var(--pn-bg-color-two);
+          }
+        }
+      }
+    }
+  }
+}
+/* header css end */

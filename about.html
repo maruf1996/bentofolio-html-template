@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bentofolio HTML Template</title>
+    <!-- favicon link here  -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- css file here  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawsome/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header section start  -->
+    <header class="header-section">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0L9 0C9.39782 0 9.77936 0.158035 10.0607 0.43934C10.342 0.720644 10.5 1.10218 10.5 1.5V22.5C10.5 22.8978 10.342 23.2794 10.0607 23.5607C9.77936 23.842 9.39782 24 9 24H1.5C1.10218 24 0.720644 23.842 0.43934 23.5607C0.158035 23.2794 0 22.8978 0 22.5V1.5ZM13.5 1.5C13.5 1.10218 13.658 0.720644 13.9393 0.43934C14.2206 0.158035 14.6022 0 15 0L22.5 0C22.8978 0 23.2794 0.158035 23.5607 0.43934C23.842 0.720644 24 1.10218 24 1.5V9C24 9.39782 23.842 9.77936 23.5607 10.0607C23.2794 10.342 22.8978 10.5 22.5 10.5H15C14.6022 10.5 14.2206 10.342 13.9393 10.0607C13.658 9.77936 13.5 9.39782 13.5 9V1.5ZM13.5 15C13.5 14.6022 13.658 14.2206 13.9393 13.9393C14.2206 13.658 14.6022 13.5 15 13.5H22.5C22.8978 13.5 23.2794 13.658 23.5607 13.9393C23.842 14.2206 24 14.6022 24 15V22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H15C14.6022 24 14.2206 23.842 13.9393 23.5607C13.658 23.2794 13.5 22.8978 13.5 22.5V15Z"
+                fill="#1A1F2C"
+              />
+            </svg>
+            <h5 class="logo-name">Bento <span>Folio</span></h5>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-smart-home"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"
+                    />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg>
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user-square-rounded"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+                    <path
+                      d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+                    />
+                    <path
+                      d="M6 20.05v-.05a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.05"
+                    />
+                  </svg>
+                  About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-stack-2"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+                    <path d="M4 12l8 4l8 -4" />
+                    <path d="M4 16l8 4l8 -4" />
+                  </svg>
+                  Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-cards"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"
+                    />
+                    <path d="M15 4h1a1 1 0 0 1 1 1v3.5" />
+                    <path
+                      d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"
+                    />
+                  </svg>
+                  Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-heart"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M17 11l1.5 -1.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4l2 -2"
+                    />
+                    <path d="M13.5 6.5l4 4" />
+                    <path
+                      d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z"
+                    />
+                  </svg>
+                  Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-message"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8 9h8" />
+                    <path d="M8 13h6" />
+                    <path
+                      d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+                    />
+                  </svg>
+                  Contact</a
+                >
+              </li>
+            </ul>
+            <div class="header-action d-flex">
+              <button class="theme-control-btn bg-transparent border-0">
+                <span class="dark-mood"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-moon"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
+                    />
+                  </svg>
+                </span>
+                <span class="light-mood d-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-sun"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 19a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z"
+                    />
+                    <path
+                      d="M18.313 16.91l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 1.218 -1.567l.102 .07z"
+                    />
+                    <path
+                      d="M7.007 16.993a1 1 0 0 1 .083 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7a1 1 0 0 1 1.414 0z"
+                    />
+                    <path
+                      d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z"
+                    />
+                    <path
+                      d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z"
+                    />
+                    <path
+                      d="M6.213 4.81l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 1.217 -1.567l.102 .07z"
+                    />
+                    <path
+                      d="M19.107 4.893a1 1 0 0 1 .083 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7a1 1 0 0 1 1.414 0z"
+                    />
+                    <path
+                      d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z"
+                    />
+                    <path
+                      d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <a href="contact.html" class="theme-btn">
+                Let's Talk
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-elbow-right"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M21 14v-6h-6" />
+                  <path d="M21 8l-9 9l-9 -9" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end  -->
+    <!-- main section start  -->
+    <main>
+      <section class="about-area">
+        <div class="container g-0">
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="card h-auto sticky-card">
+                <div class="about-me-image text-center">
+                  <img
+                    src="assets/img/img/about-me.png"
+                    class="about-me"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body about-me-content p-0">
+                  <h2 class="name">Cris Rayaan 👋</h2>
+                  <p>
+                    A Passionate <strong>Full Stack Developer</strong> 🖥️ &
+                    <strong>Product Designer</strong> having
+                    <strong>12 years</strong> of Experiences over 24+ Country
+                    Worldwide.
+                  </p>
+                  <div class="button-group d-flex gap-2">
+                    <a
+                      href="tel:01978907918"
+                      class="theme-btn theme-btn-primary"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-phone-call"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                        />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                      Book A Call
+                    </a>
+                    <button class="theme-btn theme-btn-border">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-copy"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"
+                        />
+                        <path
+                          d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"
+                        />
+                      </svg>
+                      Copy Email
+                    </button>
+                  </div>
+                  <div class="about-me-social-icon">
+                    <ul class="list-unstyled d-flex align-items-center">
+                      <li>
+                        <a
+                          class="d-flex align-items-center justify-content-center"
+                          href=""
+                        >
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="d-flex align-items-center justify-content-center"
+                          href=""
+                        >
+                          <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="d-flex align-items-center justify-content-center"
+                          href=""
+                        >
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="d-flex align-items-center justify-content-center"
+                          href=""
+                        >
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="card content-box-card">
+                <div class="card-body p-0">
+                  <div class="intro-area d-flex justify-content-between">
+                    <div class="text">
+                      <h1 class="main-title">
+                        Hi, This Is <span>Cris Rayaan</span> 👋
+                      </h1>
+                      <p class="sort-info">
+                        A Passionate Full Stack <strong>Developer</strong> 🖥️ &
+                        Product <strong>Designer</strong> having
+                        <strong>12 years</strong> of Experiences over
+                        <strong>24+</strong>
+                        Country Worldwide.
+                      </p>
+                    </div>
+                    <div class="available">
+                      <span class="available-badge d-flex align-items-center">
+                        <i class="fa-solid fa-circle"></i>
+                        Available For Hire</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="counter-area d-flex justify-content-between align-items-center"
+                  >
+                    <div class="counter d-flex align-items-center">
+                      <div class="counter-item">
+                        <h3 class="counter-number">40+</h3>
+                        <p class="counter-title">Year of Experience</p>
+                      </div>
+                      <div class="counter-item">
+                        <h3 class="counter-number">86+</h3>
+                        <p class="counter-title">Project Completed</p>
+                      </div>
+                      <div class="counter-item">
+                        <h3 class="counter-number">72+</h3>
+                        <p class="counter-title">Happy Client</p>
+                      </div>
+                    </div>
+                    <div class="circle-area position-relative">
+                      <div class="circle-text position-relative">
+                        <img
+                          class="circle-img position-absolute"
+                          src="assets/img/about/circle-text.svg"
+                          alt="circle-text"
+                        />
+                        <span
+                          class="arrow-down d-flex align-items-center justify-content-center rounded-pill"
+                          ><img
+                            src="assets/img/about/arrow-down.svg"
+                            alt="arrow-down"
+                        /></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="working-with-area">
+                    <h3 class="main-common-title">
+                      Working With 50+ Brands ✨ Worldwide
+                    </h3>
+                    <div
+                      class="working-with-main d-flex align-items-center flex-wrap"
+                    >
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/notion.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/webflow.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/mico.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/framer.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/zeplin.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/flower.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/notion.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/webflow.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/mico.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/framer.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/zeplin.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/flower.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/notion.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/webflow.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/mico.svg" alt="" />
+                      </div>
+                      <div
+                        class="brand-item d-flex align-items-center justify-content-center"
+                      >
+                        <img src="assets/img/about/notion.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="client-feedback-area">
+                    <h3 class="main-common-title">Trusted By 1200+ Clients</h3>
+                    <div class="row client-feedback-slider">
+                      <div class="col-lg-6">
+                        <div class="feedback-slider-item">
+                          <div
+                            class="feedback-top d-flex align-items-center justify-content-between gap-4"
+                          >
+                            <div class="rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="website">
+                              <a href="#" class="website-link"
+                                >framer.com
+                                <i class="fa-regular fa-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="details">
+                            <p>
+                              "We've been using BentoFolio for over a year now,
+                              and I must say, it's been a game-changer for us.
+                              The user interface is intuitive and the feature.
+                            </p>
+                          </div>
+                          <div class="author">
+                            <p class="author-name">
+                              <strong>Oliver Clain</strong>
+                              - Product Designer
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="feedback-slider-item">
+                          <div
+                            class="feedback-top d-flex align-items-center justify-content-between gap-4"
+                          >
+                            <div class="rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="website">
+                              <a href="#" class="website-link"
+                                >framer.com
+                                <i class="fa-regular fa-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="details">
+                            <p>
+                              "We've been using BentoFolio for over a year now,
+                              and I must say, it's been a game-changer for us.
+                              The user interface is intuitive and the feature.
+                            </p>
+                          </div>
+                          <div class="author">
+                            <p class="author-name">
+                              <strong>Oliver Clain</strong>
+                              - Product Designer
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="awards-area">
+                    <h3 class="main-common-title">Awards and Recognitions</h3>
+                    <ul class="list-unstyled awards-main d-flex flex-column">
+                      <li>
+                        <a href="#" class="d-block w-100">
+                          <div
+                            class="awards-item d-flex align-items-center justify-content-center"
+                          >
+                            <div class="awards-name d-flex">
+                              <div
+                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
+                              >
+                                <img
+                                  src="assets/img/about/dribble.svg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="text">
+                                <h4 class="title">
+                                  Dribble Design Contest
+                                  <span class="d-block">2022 - 2023</span>
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="wining-tag">
+                              <h4 class="title d-flex align-items-center">
+                                <img src="assets/img/about/wining.svg" alt="" />
+                                Runner Up
+                              </h4>
+                            </div>
+                            <div class="project-btn">
+                              <span
+                                >View Project
+                                <i class="fa-regular fa-arrow-up-right"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-block w-100">
+                          <div
+                            class="awards-item d-flex align-items-center justify-content-center"
+                          >
+                            <div class="awards-name d-flex">
+                              <div
+                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
+                              >
+                                <img src="assets/img/about/apple.svg" alt="" />
+                              </div>
+                              <div class="text">
+                                <h4 class="title">
+                                  Apple Design Award
+                                  <span class="d-block">2021 - 2022</span>
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="wining-tag">
+                              <h4 class="title d-flex align-items-center">
+                                <img src="assets/img/about/wining.svg" alt="" />
+                                Gold Winner
+                              </h4>
+                            </div>
+                            <div class="project-btn">
+                              <span
+                                >View Project
+                                <i class="fa-regular fa-arrow-up-right"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-block w-100">
+                          <div
+                            class="awards-item d-flex align-items-center justify-content-center"
+                          >
+                            <div class="awards-name d-flex">
+                              <div
+                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
+                              >
+                                <img src="assets/img/about/css.svg" alt="" />
+                              </div>
+                              <div class="text">
+                                <h4 class="title">
+                                  CSS Design Awards
+                                  <span class="d-block">2020 - 2021</span>
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="wining-tag">
+                              <h4 class="title d-flex align-items-center">
+                                <img src="assets/img/about/wining.svg" alt="" />
+                                Bronze Awards
+                              </h4>
+                            </div>
+                            <div class="project-btn">
+                              <span
+                                >View Project
+                                <i class="fa-regular fa-arrow-up-right"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-block w-100">
+                          <div
+                            class="awards-item d-flex align-items-center justify-content-center"
+                          >
+                            <div class="awards-name d-flex">
+                              <div
+                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
+                              >
+                                <img src="assets/img/about/award.svg" alt="" />
+                              </div>
+                              <div class="text">
+                                <h4 class="title">
+                                  Product Design Awwwards
+                                  <span class="d-block">2022 - 2023</span>
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="wining-tag">
+                              <h4 class="title d-flex align-items-center">
+                                <img src="assets/img/about/wining.svg" alt="" />
+                                Gold Winner
+                              </h4>
+                            </div>
+                            <div class="project-btn">
+                              <span
+                                >View Project
+                                <i class="fa-regular fa-arrow-up-right"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="blog-area">
+                    <h3 class="main-common-title">Article and Publications</h3>
+                    <div class="row g-4 article-slider">
+                      <div class="col-lg-6">
+                        <article class="blog-item article-slider-item">
+                          <div class="position-relative">
+                            <a href="" class="blog-image overflow-hidden">
+                              <img
+                                src="assets/img/about/article-1.png"
+                                alt=""
+                                class="w-100 rounded"
+                              />
+                            </a>
+                            <a href="#" class="tags position-absolute"
+                              >Development</a
+                            >
+                          </div>
+                          <div class="blog-content">
+                            <a href="#" class="blog-title">
+                              Want To Upgrade Your Brain? Stop Doing These 7
+                              Things
+                            </a>
+                            <div class="blog-meta">
+                              <ul
+                                class="list-unstyled d-flex align-items-center"
+                              >
+                                <li>5 min read</li>
+                                <li>Nov 6, 2023</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-lg-6">
+                        <article class="blog-item article-slider-item">
+                          <div class="position-relative">
+                            <a href="" class="blog-image overflow-hidden">
+                              <img
+                                src="assets/img/about/article-2.png"
+                                alt=""
+                                class="w-100 rounded"
+                              />
+                            </a>
+                            <a href="#" class="tags position-absolute"
+                              >Development</a
+                            >
+                          </div>
+                          <div class="blog-content">
+                            <a href="#" class="blog-title">
+                              Want To Upgrade Your Brain? Stop Doing These 7
+                              Things
+                            </a>
+                            <div class="blog-meta">
+                              <ul
+                                class="list-unstyled d-flex align-items-center"
+                              >
+                                <li>5 min read</li>
+                                <li>Nov 6, 2023</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-together-area">
+                    <div
+                      class="scrolling-info text-nowrap overflow-hidden d-flex align-items-center"
+                    >
+                      <div class="slider-item">
+                        <a href="contact-html"> Let’s 👋 Work Together </a>
+                        <a href="contact-html"> Let’s 👋 Work Together </a>
+                      </div>
+                      <div class="slider-item">
+                        <a href="contact-html"> Let’s 👋 Work Together </a>
+                        <a href="contact-html"> Let’s 👋 Work Together </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- background shape area start  -->
+      <div class="background-shapes">
+        <div class="shapes-1 common-shape">
+          <img src="assets/img/shape/shape-1.png" alt="bg-shape-1" />
+        </div>
+        <div class="shapes-2 common-shape">
+          <img src="assets/img/shape/shape-2.png" alt="bg-shape-2" />
+        </div>
+        <div class="object-shape-1 object-shape">
+          <img src="assets/img/shape/object-3d-1.png" alt="object-3d-1" />
+        </div>
+        <div class="object-shape-2 object-shape">
+          <img src="assets/img/shape/object-3d-2.png" alt="object-3d-2" />
+        </div>
+      </div>
+      <!-- background shape area end  -->
+    </main>
+    <!-- main section end  -->
+    <!-- footer section start  -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-copyright text-center">
+          <p>@ BentoFolio 2024, Design By <a href="#">MarvelTheme</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end  -->
+
+    <!-- js file  here -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

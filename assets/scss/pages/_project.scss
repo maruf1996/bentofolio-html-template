@@ -1,0 +1,48 @@
+@use "../utils" as *;
+
+.works-area {
+  .intro-area {
+    .text {
+      .sort-info {
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+  .project-area {
+    margin-top: 48px;
+    .project-item {
+      margin-bottom: 40px;
+      .img {
+        padding: 48px;
+        padding-bottom: 0;
+      }
+      .text {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        .info {
+          .project-title {
+            color: var(--pn-text-color-one);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 8px;
+            transition: 0.3s;
+            &:hover {
+              color: var(--pn-primary);
+              text-decoration: underline;
+            }
+          }
+          .project-category {
+            color: var(--pn-text-color-two);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.1;
+          }
+        }
+      }
+    }
+  }
+}

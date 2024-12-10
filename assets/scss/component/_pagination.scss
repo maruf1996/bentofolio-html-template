@@ -1,0 +1,70 @@
+@use "../utils" as *;
+
+.pagination {
+  .page-item {
+    margin: 0 4px;
+    button {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--pn-border-color);
+      color: var(--pn-text-color-two);
+      background-color: transparent;
+      transition: 0.3s;
+      &:hover {
+        border: 1px solid var(--pn-primary);
+        color: var(--pn-primary);
+      }
+      //   &.active {
+      //     border: 1px solid var(--pn-primary);
+      //     color: var(--pn-primary);
+      //   }
+    }
+    .next-page-btn {
+      position: relative;
+      .dots {
+        display: inline-block;
+      }
+      .next-page {
+        display: none;
+        .icon-arrow-right {
+          width: 20px;
+          height: 20px;
+          position: relative;
+          top: -2px;
+        }
+      }
+      .next-page-number {
+        position: absolute;
+        top: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        background-color: var(--pn-black);
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--pn-white);
+        border-radius: 5px;
+        padding: 4px 12px;
+        line-height: 14px;
+        display: none;
+      }
+      &:hover {
+        .dots {
+          display: none;
+        }
+        .next-page {
+          display: inline-block;
+        }
+        .next-page-number {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
