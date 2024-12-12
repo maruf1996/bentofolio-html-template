@@ -10,6 +10,7 @@
   border-radius: 8px;
   padding-top: 10px;
   margin-bottom: 24px;
+  aspect-ratio: 6 / 4;
 }
 
 .about-me-content {
@@ -23,6 +24,7 @@
     margin-bottom: 24px;
     font-weight: 600;
     line-height: 1.5;
+    color: var(--pn-text-color-two);
   }
 }
 

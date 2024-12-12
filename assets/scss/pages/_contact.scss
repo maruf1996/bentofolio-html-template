@@ -13,9 +13,16 @@
   .contact-info {
     margin-top: 24px;
     gap: 42px;
+    @media #{$xs} {
+      margin-top: 45px;
+      gap: 20px;
+    }
     p {
       font-size: 24px;
       color: var(--pn-text-color-one);
+      @media #{$xs} {
+        font-size: 16px;
+      }
     }
   }
   .contact-map {
@@ -24,6 +31,10 @@
       height: 380px;
       border-radius: 16px;
       overflow: hidden;
+      @media #{$xs} {
+        height: 250px;
+        border-radius: 8px;
+      }
     }
   }
 }

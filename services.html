@@ -36,7 +36,7 @@
             <h5 class="logo-name">Bento <span>Folio</span></h5>
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-xl-flex">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">
                   <svg
@@ -185,7 +185,7 @@
                 >
               </li>
             </ul>
-            <div class="header-action d-flex">
+            <div class="header-action d-none d-xl-flex">
               <button class="theme-control-btn bg-transparent border-0">
                 <span class="dark-mood"
                   ><svg
@@ -272,12 +272,12 @@
       <section class="services-area">
         <div class="container g-0">
           <div class="row g-4">
-            <div class="col-lg-4">
-              <div class="card h-auto sticky-card">
+            <div class="col-xl-4">
+              <div class="card h-auto">
                 <div class="about-me-image text-center">
                   <img
                     src="assets/img/img/about-me.png"
-                    class="about-me"
+                    class="about-me h-100"
                     alt=""
                   />
                 </div>
@@ -289,10 +289,10 @@
                     <strong>12 years</strong> of Experiences over 24+ Country
                     Worldwide.
                   </p>
-                  <div class="button-group d-flex gap-2">
+                  <div class="button-group d-block d-sm-flex gap-2">
                     <a
                       href="tel:01978907918"
-                      class="theme-btn theme-btn-primary"
+                      class="theme-btn theme-btn-primary mb-2 mb-sm-0"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -378,10 +378,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-xl-8">
               <div class="card content-box-card">
                 <div class="card-body p-0">
-                  <div class="intro-area d-flex justify-content-between">
+                  <div
+                    class="intro-area d-flex flex-column-reverse flex-xl-row justify-content-between"
+                  >
                     <div class="text">
                       <h1 class="main-title">
                         Services I <span>Offered</span>
@@ -393,8 +395,10 @@
                         Services!
                       </p>
                     </div>
-                    <div class="available">
-                      <span class="available-badge d-flex align-items-center">
+                    <div class="available flex-shrink-0">
+                      <span
+                        class="available-badge d-inline-flex align-items-center"
+                      >
                         <i class="fa-solid fa-circle"></i>
                         Available For Hire</span
                       >
@@ -402,7 +406,7 @@
                   </div>
                   <div class="services-product-area">
                     <div class="row g-4">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -415,7 +419,7 @@
                           <h4 class="service-title">UI UX Design</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -428,7 +432,7 @@
                           <h4 class="service-title">Mobile App</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -441,7 +445,7 @@
                           <h4 class="service-title">Product Design</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -454,7 +458,7 @@
                           <h4 class="service-title">Branding</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -467,7 +471,7 @@
                           <h4 class="service-title">Photography</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -480,7 +484,7 @@
                           <h4 class="service-title">Motion Design</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -493,7 +497,7 @@
                           <h4 class="service-title">Web Development</h4>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-6">
                         <div class="service-item text-center">
                           <div
                             class="service-icon d-flex justify-content-center align-items-center"
@@ -607,7 +611,7 @@
                   <div class="client-feedback-area">
                     <h3 class="main-common-title">Trusted By 1200+ Clients</h3>
                     <div class="row client-feedback-slider">
-                      <div class="col-lg-6">
+                      <div class="col-md-6">
                         <div class="feedback-slider-item">
                           <div
                             class="feedback-top d-flex align-items-center justify-content-between gap-4"
@@ -641,7 +645,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
+                      <div class="col-md-6">
                         <div class="feedback-slider-item">
                           <div
                             class="feedback-top d-flex align-items-center justify-content-between gap-4"
@@ -683,9 +687,11 @@
                       <li>
                         <a href="#" class="d-block w-100">
                           <div
-                            class="awards-item d-flex align-items-center justify-content-center"
+                            class="awards-item d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-start justify-content-md-center"
                           >
-                            <div class="awards-name d-flex">
+                            <div
+                              class="awards-name d-flex flex-column flex-md-row"
+                            >
                               <div
                                 class="icon d-flex align-items-center justify-content-center flex-shrink-0"
                               >
@@ -707,106 +713,7 @@
                                 Runner Up
                               </h4>
                             </div>
-                            <div class="project-btn">
-                              <span
-                                >View Project
-                                <i class="fa-regular fa-arrow-up-right"></i
-                              ></span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-block w-100">
-                          <div
-                            class="awards-item d-flex align-items-center justify-content-center"
-                          >
-                            <div class="awards-name d-flex">
-                              <div
-                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
-                              >
-                                <img src="assets/img/about/apple.svg" alt="" />
-                              </div>
-                              <div class="text">
-                                <h4 class="title">
-                                  Apple Design Award
-                                  <span class="d-block">2021 - 2022</span>
-                                </h4>
-                              </div>
-                            </div>
-                            <div class="wining-tag">
-                              <h4 class="title d-flex align-items-center">
-                                <img src="assets/img/about/wining.svg" alt="" />
-                                Gold Winner
-                              </h4>
-                            </div>
-                            <div class="project-btn">
-                              <span
-                                >View Project
-                                <i class="fa-regular fa-arrow-up-right"></i
-                              ></span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-block w-100">
-                          <div
-                            class="awards-item d-flex align-items-center justify-content-center"
-                          >
-                            <div class="awards-name d-flex">
-                              <div
-                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
-                              >
-                                <img src="assets/img/about/css.svg" alt="" />
-                              </div>
-                              <div class="text">
-                                <h4 class="title">
-                                  CSS Design Awards
-                                  <span class="d-block">2020 - 2021</span>
-                                </h4>
-                              </div>
-                            </div>
-                            <div class="wining-tag">
-                              <h4 class="title d-flex align-items-center">
-                                <img src="assets/img/about/wining.svg" alt="" />
-                                Bronze Awards
-                              </h4>
-                            </div>
-                            <div class="project-btn">
-                              <span
-                                >View Project
-                                <i class="fa-regular fa-arrow-up-right"></i
-                              ></span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="d-block w-100">
-                          <div
-                            class="awards-item d-flex align-items-center justify-content-center"
-                          >
-                            <div class="awards-name d-flex">
-                              <div
-                                class="icon d-flex align-items-center justify-content-center flex-shrink-0"
-                              >
-                                <img src="assets/img/about/award.svg" alt="" />
-                              </div>
-                              <div class="text">
-                                <h4 class="title">
-                                  Product Design Awwwards
-                                  <span class="d-block">2022 - 2023</span>
-                                </h4>
-                              </div>
-                            </div>
-                            <div class="wining-tag">
-                              <h4 class="title d-flex align-items-center">
-                                <img src="assets/img/about/wining.svg" alt="" />
-                                Gold Winner
-                              </h4>
-                            </div>
-                            <div class="project-btn">
+                            <div class="project-btn w-100 text-end">
                               <span
                                 >View Project
                                 <i class="fa-regular fa-arrow-up-right"></i
@@ -834,7 +741,7 @@
                               aria-controls="collapseOne"
                             >
                               What does a product designer need to know?
-                              <span class="arrow-icon">
+                              <span class="arrow-icon ms-auto">
                                 <span class="plus"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -907,7 +814,7 @@
                               aria-controls="collapseTwo"
                             >
                               What does a product designer need to know?
-                              <span class="arrow-icon">
+                              <span class="arrow-icon ms-auto">
                                 <span class="plus"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -980,7 +887,7 @@
                               aria-controls="collapseThree"
                             >
                               What does a product designer need to know?
-                              <span class="arrow-icon">
+                              <span class="arrow-icon ms-auto">
                                 <span class="plus"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -1053,7 +960,7 @@
                               aria-controls="collapseFour"
                             >
                               What does a product designer need to know?
-                              <span class="arrow-icon">
+                              <span class="arrow-icon ms-auto">
                                 <span class="plus"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -1126,7 +1033,7 @@
                               aria-controls="collapseFive"
                             >
                               What does a product designer need to know?
-                              <span class="arrow-icon">
+                              <span class="arrow-icon ms-auto">
                                 <span class="plus"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"

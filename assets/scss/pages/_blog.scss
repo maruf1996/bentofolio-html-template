@@ -5,6 +5,9 @@
     .text {
       .main-title {
         font-size: 32px;
+        @media #{$xs,$md,$lg} {
+          font-size: 30px;
+        }
       }
       .sort-info {
         margin-top: 18px;

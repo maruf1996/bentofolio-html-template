@@ -3,6 +3,9 @@
 .project-details-area {
   .project-overview {
     gap: 56px;
+    @media #{$xs,$md,$lg} {
+      gap: 30px;
+    }
     .sort-info {
       max-width: 242px;
       .label {
@@ -18,6 +21,9 @@
         font-weight: 500;
         line-height: 1.2;
         margin-bottom: 24px;
+        @media #{$xs,$md,$lg} {
+          font-size: 20px;
+        }
       }
     }
     .overview {
@@ -52,6 +58,9 @@
       font-size: 32px;
       font-weight: 500;
       line-height: 1.2;
+      @media #{$xs,$md,$lg} {
+        font-size: 25px;
+      }
     }
     .content-list {
       margin-top: 32px;

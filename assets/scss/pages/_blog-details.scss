@@ -10,8 +10,11 @@
       margin-top: 32px;
       margin-bottom: 24px;
       font-size: 32px;
-      line-height: 1.1;
+      line-height: 1.3;
       font-weight: 500;
+      @media #{$xs,$md,$lg} {
+        font-size: 24px;
+      }
     }
     p {
       font-size: 16px;
@@ -28,20 +31,21 @@
       border-radius: 8px;
       padding: 40px 60px 40px 66px;
       margin: 40px 0;
+      @media #{$xs,$md,$lg} {
+        padding: 20px;
+        background-color: transparent;
+        padding: 0 20px;
+      }
       .blockquote-title {
         color: var(--pn-text-color-one);
         font-size: 24px;
         font-weight: 500;
         line-height: 1.6;
         margin-bottom: 24px;
-        &::after {
-          width: 2px;
-          height: 95px;
-          background-color: var(--pn-primary);
-          position: absolute;
-          top: 12px;
-          left: -24px;
-          content: "";
+        font-style: italic;
+        @media #{$xs,$md,$lg} {
+          font-size: 16px;
+          margin-bottom: 20px;
         }
       }
       .name {
@@ -49,6 +53,23 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 1.1;
+        @media #{$xs,$md,$lg} {
+          font-size: 14px;
+        }
+      }
+      &::after {
+        width: 2px;
+        height: 95px;
+        background-color: var(--pn-primary);
+        position: absolute;
+        top: 12px;
+        left: 0px;
+        content: "";
+        @media #{$xs,$md,$lg} {
+          height: 98%;
+          top: 0;
+          width: 4px;
+        }
       }
     }
     .list-info {
@@ -76,6 +97,9 @@
       }
     }
     .tags-and-share {
+      @media #{$xs,$md,$lg} {
+        gap: 20px;
+      }
       .label {
         color: var(--pn-text-color-one);
         font-size: 18px;
@@ -104,8 +128,6 @@
             }
           }
         }
-      }
-      .share {
       }
     }
     .related-blog-row {

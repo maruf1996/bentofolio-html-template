@@ -141,11 +141,14 @@ body {
   font-family: var(--pn-body-fonts);
   font-size: 16px;
   font-weight: 500;
-  color: var(--pn-text-color-one);
+  color: var(--pn-text-color-two);
   background-color: var(--pn-body-bg);
   line-height: 1.6;
   overflow-x: hidden;
   padding: 24px 0;
+  @media #{$xs} {
+    padding: 24px 10px;
+  }
 }
 
 a {

@@ -36,7 +36,7 @@
             <h5 class="logo-name">Bento <span>Folio</span></h5>
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-xl-flex">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">
                   <svg
@@ -185,7 +185,7 @@
                 >
               </li>
             </ul>
-            <div class="header-action d-flex">
+            <div class="header-action d-none d-xl-flex">
               <button class="theme-control-btn bg-transparent border-0">
                 <span class="dark-mood"
                   ><svg
@@ -272,12 +272,12 @@
       <section class="contact-area">
         <div class="container g-0">
           <div class="row g-4">
-            <div class="col-lg-4">
-              <div class="card h-auto sticky-card">
+            <div class="col-xl-4">
+              <div class="card h-auto">
                 <div class="about-me-image text-center">
                   <img
                     src="assets/img/img/about-me.png"
-                    class="about-me"
+                    class="about-me h-100"
                     alt=""
                   />
                 </div>
@@ -289,10 +289,10 @@
                     <strong>12 years</strong> of Experiences over 24+ Country
                     Worldwide.
                   </p>
-                  <div class="button-group d-flex gap-2">
+                  <div class="button-group d-block d-sm-flex gap-2">
                     <a
                       href="tel:01978907918"
-                      class="theme-btn theme-btn-primary"
+                      class="theme-btn theme-btn-primary mb-2 mb-sm-0"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -378,7 +378,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-xl-8">
               <div class="card content-box-card">
                 <div class="card-body p-0">
                   <div class="intro-area d-flex justify-content-between">
@@ -393,7 +393,9 @@
                       </p>
                     </div>
                   </div>
-                  <div class="contact-info d-flex align-items-center">
+                  <div
+                    class="contact-info d-flex flex-column flex-md-row align-items-start align-items-md-center"
+                  >
                     <a
                       href="tel:01978907918"
                       class="theme-btn theme-btn-border"
@@ -406,7 +408,7 @@
                     <div class="form-main">
                       <form action="#">
                         <div class="row g-4">
-                          <div class="col-lg-6">
+                          <div class="col-md-6">
                             <div class="input-group">
                               <label class="form-label">Name</label>
                               <input
@@ -416,7 +418,7 @@
                               />
                             </div>
                           </div>
-                          <div class="col-lg-6">
+                          <div class="col-md-6">
                             <div class="input-group">
                               <label class="form-label"
                                 >Email ID <sup>*</sup></label
@@ -428,7 +430,7 @@
                               />
                             </div>
                           </div>
-                          <div class="col-lg-6">
+                          <div class="col-md-6">
                             <div class="input-group">
                               <label class="form-label">Subject </label>
                               <input
@@ -438,7 +440,7 @@
                               />
                             </div>
                           </div>
-                          <div class="col-lg-6">
+                          <div class="col-md-6">
                             <div class="input-group">
                               <label class="form-label">Budget </label>
                               <select class="form-select shadow-none">
@@ -450,7 +452,7 @@
                               </select>
                             </div>
                           </div>
-                          <div class="col-lg-12">
+                          <div class="col-md-12">
                             <div class="input-group">
                               <label class="form-label">Message </label>
                               <textarea
@@ -460,7 +462,7 @@
                               ></textarea>
                             </div>
                           </div>
-                          <div class="col-lg-12">
+                          <div class="col-md-12">
                             <button
                               type="submit"
                               class="theme-btn w-100 border-0"

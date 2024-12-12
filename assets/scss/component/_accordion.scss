@@ -20,6 +20,9 @@
       border-radius: 8px !important;
       padding: 24px;
       position: relative;
+      @media #{$xs,$md,$lg,$xl} {
+        font-size: 19px;
+      }
       &::after {
         background: none;
       }

@@ -53,6 +53,9 @@
 
 .mt-32 {
   margin-top: 32px;
+  @media #{$xs} {
+    font-size: 20px;
+  }
 }
 
 // form element css
@@ -60,6 +63,9 @@
   background-color: var(--pn-bg-color-four);
   padding: 48px;
   border-radius: 16px;
+  @media #{$xs} {
+    padding: 20px;
+  }
 }
 .input-group {
   .form-label {
