@@ -20,8 +20,12 @@
       border-radius: 8px !important;
       padding: 24px;
       position: relative;
-      @media #{$xs,$md,$lg,$xl} {
+      @media #{$md,$lg,$xl} {
         font-size: 19px;
+      }
+      @media #{$xs} {
+        padding: 15px;
+        font-size: 18px;
       }
       &::after {
         background: none;
@@ -38,6 +42,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media #{$xs} {
+          right: 10px;
+        }
         svg {
           width: 16px;
           height: 16px;

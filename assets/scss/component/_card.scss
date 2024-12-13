@@ -7,6 +7,10 @@
   border-radius: 16px;
   padding: 24px;
   height: 100%;
+  &.sticky-card {
+    position: sticky;
+    top: 94px;
+  }
   .card-body {
     .card-headers {
       margin-bottom: 15px;
