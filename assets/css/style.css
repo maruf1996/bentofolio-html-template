@@ -432,7 +432,7 @@ button:focus {
   margin-bottom: 24px;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 .header-section .navbar {
   padding: 0;
@@ -500,11 +500,94 @@ button:focus {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  color: var(--pn-text-color-one);
+}
+.header-section .navbar .header-action .theme-control-btn span small {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 8px;
 }
 .header-section .navbar .header-action .theme-control-btn span:hover {
   background-color: var(--pn-bg-color-two);
 }
+.header-section .menu-control-btn {
+  background-color: transparent;
+  font-size: 22px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+.header-section .menu-control-btn i {
+  color: var(--pn-text-color-one);
+}
 
+@media (max-width: 1199.98px) {
+  .header-section .collapse:not(.show) {
+    display: flex;
+  }
+  .header-section .navbar .navbar-inner .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .header-section .navbar .navbar-inner .navbar-nav .nav-item {
+    margin-bottom: 6px;
+  }
+  .header-section .navbar .navbar-inner .navbar-nav .nav-item .nav-link {
+    padding: 12px 15px;
+  }
+  .header-section .navbar-collapse {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    background-color: var(--pn-white);
+    flex-direction: column;
+    padding: 16px;
+    transition: 0.3s;
+  }
+  .header-section .navbar-collapse .mobile-sidebar-logo {
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  .header-section .navbar-collapse.open {
+    left: 0;
+  }
+  .header-section .mobile-menu-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .header-section .mobile-menu-overlay.open {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header-section .header-action {
+    width: 100%;
+    margin-top: auto;
+  }
+  .header-section .header-action .theme-control-btn {
+    margin-bottom: 12px;
+  }
+  .header-section .header-action .theme-control-btn span {
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: start !important;
+    padding: 8px 12px !important;
+  }
+  .header-section .header-action .theme-control-btn span svg {
+    margin-bottom: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  .header-section .header-action .theme-btn {
+    text-align: center;
+  }
+}
 /* header css end */
 .work-experience-card .work-experience-main {
   gap: 16px;
