@@ -1504,33 +1504,25 @@ button:focus {
 .content-box-card .client-feedback-area {
   margin-top: 57px;
 }
-.content-box-card .client-feedback-area .client-feedback-slider {
-  gap: 20px;
-  flex-wrap: nowrap;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .content-box-card .client-feedback-area .client-feedback-slider {
-    gap: 0;
-  }
-}
-@media (max-width: 767px) {
-  .content-box-card .client-feedback-area .client-feedback-slider {
-    flex-wrap: wrap;
-  }
-}
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item {
+.content-box-card .client-feedback-area .feedback-slider-item {
   background-color: var(--pn-bg-color-four);
   border-radius: 8px;
   padding: 30px 24px;
+  margin: 0 12px;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .feedback-top {
+@media (max-width: 576px) {
+  .content-box-card .client-feedback-area .feedback-slider-item {
+    margin-top: 45px;
+  }
+}
+.content-box-card .client-feedback-area .feedback-slider-item .feedback-top {
   margin-bottom: 24px;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .feedback-top .rating i {
+.content-box-card .client-feedback-area .feedback-slider-item .feedback-top .rating i {
   color: var(--pn-text-color-five);
   font-size: 16px;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .feedback-top .website .website-link {
+.content-box-card .client-feedback-area .feedback-slider-item .feedback-top .website .website-link {
   padding: 4px 8px;
   background-color: var(--pn-bg-color-three);
   color: var(--pn-primary);
@@ -1540,30 +1532,70 @@ button:focus {
   line-height: 1.1;
   transition: 0.3s;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .feedback-top .website .website-link i {
+.content-box-card .client-feedback-area .feedback-slider-item .feedback-top .website .website-link i {
   margin-left: 4px;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .feedback-top .website .website-link:hover {
+.content-box-card .client-feedback-area .feedback-slider-item .feedback-top .website .website-link:hover {
   background-color: var(--pn-primary);
   color: var(--pn-white);
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .details {
+.content-box-card .client-feedback-area .feedback-slider-item .details {
   margin-bottom: 40px;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .details p {
+.content-box-card .client-feedback-area .feedback-slider-item .details p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .author .author-name {
+.content-box-card .client-feedback-area .feedback-slider-item .author .author-name {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   color: var(--pn-text-color-seven);
 }
-.content-box-card .client-feedback-area .client-feedback-slider .feedback-slider-item .author .author-name strong {
+.content-box-card .client-feedback-area .feedback-slider-item .author .author-name strong {
   color: var(--pn-text-color-one);
   font-weight: 500;
+}
+.content-box-card .client-feedback-area .arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--pn-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9;
+  position: absolute;
+  top: -67px;
+  color: var(--pn-text-color-one);
+  transition: 0.3s;
+}
+.content-box-card .client-feedback-area .arrow:hover {
+  border: 1px solid var(--pn-primary);
+  color: var(--pn-primary);
+}
+@media (max-width: 576px) {
+  .content-box-card .client-feedback-area .arrow {
+    top: -12px;
+  }
+}
+.content-box-card .client-feedback-area .arrow-prev {
+  right: 12px;
+}
+@media (max-width: 576px) {
+  .content-box-card .client-feedback-area .arrow-prev {
+    left: 58px;
+  }
+}
+.content-box-card .client-feedback-area .arrow-next {
+  right: 60px;
+}
+@media (max-width: 576px) {
+  .content-box-card .client-feedback-area .arrow-next {
+    left: 14px;
+  }
 }
 .content-box-card .awards-area {
   margin-top: 56px;
